@@ -1,5 +1,3 @@
 # lesson1_2
-tesing working with TailWindcss
-I can start Tailwind CSS now, as I have studied HTML and CSS long enough!
- Finally!  👍
+I am studying Tailwind. This is the initial setup by Dave Grey instruction Video. So I saved it for awhile here.
  
