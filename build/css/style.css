@@ -223,15 +223,9 @@ button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
-  /* Standard */
-  appearance: button;
-
-  /* Vendor Prefixes */
   -webkit-appearance: button;
-  -moz-appearance: button;
-  -ms-appearance: button;
-  -o-appearance: button;
-  /* 1 *why
+  appearance: button;
+  /* 1 */
   background-color: transparent;
   /* 2 */
   background-image: none;
@@ -277,10 +271,8 @@ Correct the cursor style of increment and decrement buttons in Safari.
 */
 
 [type='search'] {
-  /* Define the standard property 'appearance' for compatibility with vendor prefixes */
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
+  -webkit-appearance: textfield;
+  appearance: textfield;
   /* 1 */
   outline-offset: -2px;
   /* 2 */
@@ -412,7 +404,7 @@ embed,
 object {
   display: block;
   /* 1 */
-   
+  /* Remove vertical-align property as it is ignored with display: block */
   /* 2 */
 }
 
