@@ -223,9 +223,15 @@ button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
-  -webkit-appearance: button;
+  /* Standard */
   appearance: button;
-  /* 1 */
+
+  /* Vendor Prefixes */
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  -ms-appearance: button;
+  -o-appearance: button;
+  /* 1 *why
   background-color: transparent;
   /* 2 */
   background-image: none;
@@ -271,10 +277,10 @@ Correct the cursor style of increment and decrement buttons in Safari.
 */
 
 [type='search'] {
-  -webkit-appearance: textfield;
-  -webkit-appearance: textfield;
-  -moz-appearance: textfield;
-  appearance: textfield;
+  /* Define the standard property 'appearance' for compatibility with vendor prefixes */
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
   /* 1 */
   outline-offset: -2px;
   /* 2 */
@@ -406,64 +412,10 @@ embed,
 object {
   display: block;
   /* 1 */
-  /*
-  1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
-  */
-
-  img,
-  svg,
-  video,
-  canvas,
-  audio,
-  iframe,
-  embed,
-  object {
-    display: block;
-    /* 1 */
-    margin: 0 auto;
-  }
-
-  /*
-  Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
-  */
-
-  img,
-  video {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /*
-  Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
-  */
-
-  audio,
-  canvas,
-  embed,
-  iframe,
-  img,
-  object,
-  svg,
-  video {
-    vertical-align: middle;
-  }
+   
   /* 2 */
 }
-/*
-1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
-*/
 
-img,
-svg,
-video,
-canvas,
-audio,
-iframe,
-embed,
-object {
-  display: block;
-  /* 1 */
-}
 /*
 Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
 */
