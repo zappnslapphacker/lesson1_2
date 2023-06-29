@@ -15,5 +15,4 @@ function multiply(arr, n) {
     return 1;
   } else {
     return multiply(arr, n - 1) * arr[n - 1];
-  }
-}
+  }}
